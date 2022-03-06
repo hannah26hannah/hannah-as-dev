@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Navigation() {
+  const router = useRouter();
+
   return (
-    <nav className='w-full text-white text-xl mt-10'>
+    <nav className='w-full text-white text-xl mt-10 h-12 border-b-2 border-b-gray-light'>
       <ul className='h-4 flex flex-row justify-between'>
         <div>
           <li>
@@ -13,15 +16,18 @@ export default function Navigation() {
         </div>
         <div className='flex flex-row justify-around'>
           {[
-            ['About', '/about'],
-            ['Blog', 'blog'],
+            ['Blog', '/blog'],
             ['Projects', '/projects'],
             ['Resume', '/resume'],
             ['Contact', '/contact'],
           ].map(([title, url]) => (
-            <li>
+            <li key={url}>
               <Link href={url}>
-                <a className='rounded-lg px-3 py-2 font-medium text-[#4F6D7A] hover:bg-slate-100'>
+                <a
+                  className={`${
+                    router.pathname === url ? 'underline' : ''
+                  } cursor-pointer rounded-lg px-3 py-2 font-medium text-[#4F6D7A] hover:bg-slate-100`}
+                >
                   {title}
                 </a>
               </Link>

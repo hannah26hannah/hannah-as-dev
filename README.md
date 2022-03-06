@@ -6,7 +6,8 @@
 
 ## Stack
 
-- 리액트 프레임워크 Next.js
+- React Framework `Next.js`
+- `TailwindCSS`
 
 ## Challenge
 
