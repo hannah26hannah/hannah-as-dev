@@ -12,10 +12,6 @@ const Highlighter = ({ text, path }) => {
 export default function Home() {
   return (
     <IndexLayout>
-      <Head>
-        <title>Hannah as Dev</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
       <section className='w-full flex flex-col tablet:flex-row justify-between text-gray-1 '>
         <article>
           <p className='font-normal text-2xl'>
