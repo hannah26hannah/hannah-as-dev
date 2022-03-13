@@ -1,9 +1,15 @@
+import Head from 'next/head';
 import Layout from '../components/layout';
 
 export default function Resume() {
   return (
     <Layout>
-      <h1>Resume</h1>
+      <Head>
+        <title>hannah as dev | Resume</title>
+      </Head>
+      <section className='flex flex-col justify-center items-center'>
+        <h1>Resume</h1>
+      </section>
     </Layout>
   );
 }

@@ -4,16 +4,24 @@ import { useRouter } from 'next/router';
 export default function Navigation() {
   const router = useRouter();
 
+  const getLabel = () => {
+    switch (router.pathname) {
+      case '/blog':
+        return 'writer';
+      case '/contact':
+        return '☕-lover';
+      default:
+        return 'dev';
+    }
+  };
+
   return (
-    <nav className='w-full text-white text-xl mt-10 h-12 border-b-2 border-b-gray-light'>
-      <ul className='h-4 flex flex-row justify-between'>
-        <div>
-          <li>
-            <Link href='/'>
-              <a>Hannah-as-dev</a>
-            </Link>
-          </li>
-        </div>
+    <nav className='w-full flex flex-col text-gray-1 text-xl py-6 items-center h-auto'>
+      <Link href='/'>
+        <a className='text-3xl mb-6'>Hannah-as-{getLabel()}</a>
+      </Link>
+
+      <ul className='flex flex-row justify-between'>
         <div className='flex flex-row justify-around'>
           {[
             ['Blog', '/blog'],
@@ -21,12 +29,12 @@ export default function Navigation() {
             ['Resume', '/resume'],
             ['Contact', '/contact'],
           ].map(([title, url]) => (
-            <li key={url}>
+            <li key={url} className='relative'>
               <Link href={url}>
                 <a
                   className={`${
-                    router.pathname === url ? 'underline' : ''
-                  } cursor-pointer rounded-lg px-3 py-2 font-medium text-[#4F6D7A] hover:bg-slate-100`}
+                    router.pathname === url ? 'floating-dot' : ''
+                  } cursor-pointer rounded-lg px-3 py-2 font-medium text-gray-1 hover:underline`}
                 >
                   {title}
                 </a>

@@ -1,26 +1,24 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Layout from '../components/layout';
+import { IndexLayout } from '../components/layout';
 
 const Highlighter = ({ text, path }) => {
   return (
     <Link href={path}>
-      <a className='hover:underline hover:cursor-pointer hover:text-white'>
-        {text}
-      </a>
+      <a className='underline hover:cursor-pointer'>{text}</a>
     </Link>
   );
 };
 export default function Home() {
   return (
-    <Layout className='bg-gray-default w-full h-full'>
+    <IndexLayout>
       <Head>
         <title>Hannah as Dev</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='flex flex-row justify-between'>
+      <section className='w-full flex flex-col tablet:flex-row justify-between text-gray-1 '>
         <article>
-          <p>
+          <p className='font-normal text-2xl'>
             Hi, <br />
             I'm a <Highlighter text='Seoul based' path='/contact' />
             <br />
@@ -33,17 +31,17 @@ export default function Home() {
             run a{' '}
             <Highlighter
               text='queer-tech community, :q'
-              path='/projects/organizer'
+              path='/projects/community'
             />
             <br />
             love to{' '}
             <Highlighter text='dive into further' path='/projects/researcher' />
           </p>
         </article>
-        <aside className='flex items-end'>
-          <h1>Hannah as Dev</h1>
+        <aside className='flex absolute right-5 bottom-10 tablet:items-end'>
+          <h1 className='font-light text-3xl'>Hannah as Dev</h1>
         </aside>
-      </main>
-    </Layout>
+      </section>
+    </IndexLayout>
   );
 }
