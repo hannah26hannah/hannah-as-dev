@@ -14,6 +14,26 @@ export const Post = defineDocumentType(() => ({
       description: 'The date of the post',
       required: true,
     },
+    subtitle: {
+      type: 'string',
+      description: 'The subtitle of the post',
+      required: false,
+    },
+    tags: {
+      type: 'list',
+      of: {
+        type: 'string',
+      },
+      required: true,
+    },
+    mainImage: {
+      type: 'string',
+      required: false,
+    },
+    excerpt: {
+      type: 'string',
+      required: false,
+    },
   },
   computedFields: {
     url: {
