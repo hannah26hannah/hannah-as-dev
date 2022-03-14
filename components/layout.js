@@ -27,7 +27,7 @@ export default function Layout({ children }) {
 
 export function IndexLayout({ children }) {
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center py-10 px-5 tablet:py-[100px] tablet:px-[80px] desktop:py-[200px]'>
+    <div className='flex min-h-screen flex-col items-center justify-center pb-10 px-5 tablet:py-[100px] tablet:px-[80px] desktop:py-[200px]'>
       <Head>
         <title>Hannah as Dev</title>
         <link rel='icon' href='/favicon.ico' />
