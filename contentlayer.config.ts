@@ -31,7 +31,10 @@ export const Post = defineDocumentType(() => ({
       required: false,
     },
     excerpt: {
-      type: 'string',
+      type: 'list',
+      of: {
+        type: 'string',
+      },
       required: false,
     },
   },
