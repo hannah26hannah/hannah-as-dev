@@ -30,7 +30,7 @@ export default function Resume() {
               <img src={data.icon} alt='icon' width='40px' height='40px' />
             </h2>
 
-            <img src={data.cover} alt='cover' />
+            {/* <img src={data.cover} alt='cover' /> */}
 
             <time
               dateTime={data.lastEditedTime}
