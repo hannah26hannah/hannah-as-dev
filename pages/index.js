@@ -18,20 +18,16 @@ export default function Home() {
             Hi, <br />
             I'm a <Highlighter text='Seoul based' path='/contact' />
             <br />
-            <Highlighter text='Front-end Developer' path='/projects/dev' />
+            <Highlighter text='Front-end Developer' path='/projects' />
             <br />
             who likes to{' '}
             <Highlighter text='learn + write about new things' path='/blog' />
             <br />
             I ... <br />
             run a{' '}
-            <Highlighter
-              text='queer-tech community, :q'
-              path='/projects/community'
-            />
+            <Highlighter text='queer-tech community, :q' path='/projects' />
             <br />
-            love to{' '}
-            <Highlighter text='dive into further' path='/projects/researcher' />
+            love to <Highlighter text='dive into further' path='/projects' />
           </p>
         </article>
         <aside className='flex absolute right-5 bottom-10 tablet:items-end'>

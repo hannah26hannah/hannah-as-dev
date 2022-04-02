@@ -5,14 +5,29 @@ const metadata = {
     name: 'JeongWon Yoo',
     description: 'Seoul Based Front-End develoepr',
   },
-  social: {
-    github: 'https://github.com/hannah26hannah',
-    linkedin: 'https://www.linkedin.com/in/jeongwon-yoo',
-    email: 'jeongwon.y.h@gmail.com',
-    tstory: 'https://uiyoji-journal.tistory.com/',
-    stackoverflow: 'https://stackoverflow.com/users/16089741/jeongwon',
-    rss: '',
-  },
+  social: [
+    {
+      name: 'github',
+      link: 'https://github.com/hannah26hannah',
+    },
+    {
+      name: 'linkedin',
+      link: 'https://www.linkedin.com/in/jeongwon-yoo',
+    },
+
+    {
+      name: 'stack-overflow',
+      link: 'https://stackoverflow.com/users/16089741/jeongwon',
+    },
+    {
+      name: 'blog',
+      link: 'https://uiyoji-journal.tistory.com/',
+    },
+    {
+      name: 'email',
+      link: 'jeongwon.y.h@gmail.com',
+    },
+  ],
   analytics: {
     google: '',
   },
