@@ -24,6 +24,7 @@ module.exports = {
       beige: {
         default: '#f5f5dc',
       },
+
       gray: {
         1: '#333333',
         5: '#E0E0E0',
