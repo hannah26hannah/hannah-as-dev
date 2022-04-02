@@ -33,3 +33,6 @@ yarn-error.log*
 
 # Contentlayer
 .contentlayer
+
+posts/CORS-error.md
+posts/nextjs-blog-series-2-REST-API.md
