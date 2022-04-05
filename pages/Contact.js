@@ -24,20 +24,17 @@ export default function Contact() {
         <h2 className='text-center'>
           Let's have coffee and a great chat with me!
           <br />
-          You can book me 👇
-        </h2>
-        <div className='flex justify-center mt-5'>
           <a
             href='https://dev-hannah.youcanbook.me/'
             data-ycbm-modal='true'
             target='_blank'
+            className='underline'
           >
-            <img
-              src='https://youcanbook.me/resources/pics/ycbm-button.png'
-              className='border-none'
-              // style='border-style:none;'
-            />
+            You can book me right here
           </a>
+        </h2>
+        <div className='flex justify-center mt-5'>
+          <img src={'/images/coffee-chat.gif'} alt={'coffee'} />
         </div>
       </section>
     </Layout>
