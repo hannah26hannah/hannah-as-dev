@@ -16,6 +16,30 @@
   z-index: -5;
 }
 
+/** projects */
+.oval {
+  border-radius: 50%;
+  width: 20rem;
+  height: 10rem;
+
+  transform: rotate(25deg);
+}
+
+.oval:hover {
+  transform: rotate(20deg);
+}
+.research {
+  background-color: antiquewhite;
+}
+.translation {
+  background-color: burlywood;
+}
+.side-projects {
+  background-color: beige;
+}
+.community {
+  background-color: chocolate;
+}
 /** highlight */
 pre {
   text-align: left;
