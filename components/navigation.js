@@ -1,5 +1,10 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import SideBar from './SideBar';
+import menu from 'data/menu';
 
 export default function Navigation() {
   const router = useRouter();
@@ -23,23 +28,36 @@ export default function Navigation() {
     return pathname === url;
   };
 
+  const [isOpen, setOpen] = useState(false);
+
+  const openMobileMenu = () => {
+    setOpen(true);
+  };
+
+  const closeMobileMenu = () => {
+    setOpen(false);
+  };
+
   return (
-    <nav className='w-full flex flex-col text-gray-1 text-xl py-6 items-center h-auto'>
+    <nav className='w-full flex flex-col text-gray-1 text-xl py-6 items-start tablet:items-center h-auto'>
       <h1 className='text-3xl mb-6'>
         <Link href='/'>
           <a>Hannah-as-{getLabel()}</a>
         </Link>
       </h1>
 
-      <ul className='flex flex-row justify-between'>
+      <button type='button' onClick={openMobileMenu} className='tablet:hidden'>
+        <span className='sr-only'>Open Mobile Menu</span>
+        <FontAwesomeIcon icon={faBars} size='xl' />
+      </button>
+
+      {isOpen && (
+        <SideBar closeMobileMenu={closeMobileMenu} isActive={isActive} />
+      )}
+
+      <ul className='hidden tablet:flex flex-row justify-between'>
         <div className='flex flex-row justify-around'>
-          {[
-            ['About', '/'],
-            ['Blog', '/blog'],
-            ['Projects', '/projects'],
-            ['Resume', '/resume'],
-            ['Contact', '/contact'],
-          ].map(([title, url]) => (
+          {menu.map(([title, url]) => (
             <li key={url} className='relative'>
               <Link href={url}>
                 <a

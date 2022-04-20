@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Navigation from './navigation';
-import Footer from './footer';
+import Navigation from './Navigation';
+import Footer from './Footer';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { capitalize } from '../utils';
@@ -16,7 +16,9 @@ export default function Layout({ children }) {
         <title>{capitalize(title)} | Hannah as Dev</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+
       <Navigation />
+
       <main className='w-full max-w-screen-tablet mb-6 flex-grow flex-col justify-center items-center pb-5'>
         {children}
       </main>
