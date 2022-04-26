@@ -2,7 +2,7 @@
 title: Window, Mac 사용자가 함께 일하기 - Git autocrlf
 subtitle: Window, Mac, CRLF, LF
 date: 2022-04-18
-tags: ['Window', 'Mac OS', 'CRLF', 'LF', 'Git', 'autoclrf']
+tags: ['Window', 'Mac OS', 'Git']
 excerpt:
   [
     'https://simsimjae.medium.com/vscode%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0%EB%95%8C-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-crlf%EC%99%80-%EB%A7%A5%EC%9D%98-lf-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-51ba3fb76cc3',
