@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Navigation from './Navigation';
-import Footer from './Footer';
+import Navigation from './navigation';
+import Footer from './footer';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { capitalize } from '../utils';
