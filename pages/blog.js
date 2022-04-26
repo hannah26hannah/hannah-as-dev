@@ -39,11 +39,9 @@ function PostList(post) {
 export default function Blog({ posts }) {
   return (
     <Layout>
-      <section className='flex flex-row gap-5'>
+      <section className='flex flex-row justify-center gap-5'>
         {/* TODO bottom-to-top animation use cubic-bezier animation ref: https://wsss.tistory.com/788 */}
-        <aside className='border-r-2 border-r-gray-5 border-r-solid p-2'>
-          Books
-        </aside>
+
         <ul>
           {posts.map((post, index) => (
             <PostList key={index} {...post} />
