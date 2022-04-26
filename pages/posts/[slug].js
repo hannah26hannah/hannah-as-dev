@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
-import Layout from '../../components/Layout';
+import Layout from '../../components/layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { forwardRef } from 'react';
@@ -41,7 +41,6 @@ function PostLayout({ post }) {
     );
   });
 
-
   return (
     <Layout>
       <Head>
@@ -73,10 +72,8 @@ function PostLayout({ post }) {
           className='py-3 flex flex-col gap-8'
           align='center'
         />
-
       </article>
-      
-        
+
       <Excerpt excerpt={post.excerpt} />
       <Tags tags={post.tags} />
       {/* <section><GiscusComment slug={post.slug} /></section> */}
