@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
 import metadata from 'data/metadata';
+import Image from 'next/image';
+import CoffeeChat from '../public/images/coffee-chat.gif';
 
 export default function Contact() {
   return (
@@ -11,7 +13,12 @@ export default function Contact() {
           {metadata.social.map(({ name, link }) => (
             <li key={name} className='p-2 hover:bg-beige-default rounded-md'>
               <a href={link} target='_blank'>
-                <img alt={name} src={`/images/${name}.svg`} width='46.22px' />
+                <Image
+                  alt={name}
+                  src={`/images/${name}.svg`}
+                  width={46.22}
+                  height={46.22}
+                />
               </a>
             </li>
           ))}
@@ -34,7 +41,7 @@ export default function Contact() {
           </a>
         </h2>
         <div className='flex justify-center mt-5'>
-          <img src={'/images/coffee-chat.gif'} alt={'coffee'} />
+          <Image src={CoffeeChat} alt={'coffee'} />
         </div>
       </section>
     </Layout>

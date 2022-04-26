@@ -23,6 +23,7 @@ export default function Resume() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>
+        I'm working on this right now ..
         {/* {data && (
           <article>
             <h2 className='flex justify-end items-center'>
