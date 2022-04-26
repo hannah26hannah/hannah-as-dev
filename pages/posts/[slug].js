@@ -2,12 +2,13 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { forwardRef } from 'react';
 import GiscusComment from '../../components/GiscusComment';
 import Tags from '../../components/Tag';
+import Excerpt from '../../components/Excerpt';
 
 export async function getStaticPaths() {
   const paths = allPosts.map((post) => post.url);
@@ -40,7 +41,6 @@ function PostLayout({ post }) {
     );
   });
 
-  console.log('post', post);
 
   return (
     <Layout>
@@ -73,7 +73,11 @@ function PostLayout({ post }) {
           className='py-3 flex flex-col gap-8'
           align='center'
         />
+
       </article>
+      
+        
+      <Excerpt excerpt={post.excerpt} />
       <Tags tags={post.tags} />
       {/* <section><GiscusComment slug={post.slug} /></section> */}
     </Layout>
