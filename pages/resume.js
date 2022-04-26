@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import Head from 'next/head';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 import React, { useEffect, useState } from 'react';
 import { format, parseISO } from 'date-fns';
@@ -23,14 +23,14 @@ export default function Resume() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>
-        {data && (
+        {/* {data && (
           <article>
             <h2 className='flex justify-end items-center'>
               {data.title}
               <img src={data.icon} alt='icon' width='40px' height='40px' />
             </h2>
 
-            {/* <img src={data.cover} alt='cover' /> */}
+            <img src={data.cover} alt='cover' />
 
             <time
               dateTime={data.lastEditedTime}
@@ -39,7 +39,8 @@ export default function Resume() {
               {`Last Updated, ${formatDate(data.lastEditedTime)}`}
             </time>
           </article>
-        )}
+        )} 
+        */}
       </section>
     </Layout>
   );
