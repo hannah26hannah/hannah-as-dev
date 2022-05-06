@@ -14,7 +14,7 @@ export default function Navigation() {
     switch (router.pathname) {
       case '/blog':
         return 'writer';
-      case '/contact':
+      case '/channel':
         return '☕-lover';
       default:
         return 'dev';

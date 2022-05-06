@@ -4,7 +4,7 @@ import metadata from 'data/metadata';
 import Image from 'next/image';
 // import CoffeeChat from '../public/images/coffee-chat.gif';
 
-export default function Contact() {
+export default function Channel() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>

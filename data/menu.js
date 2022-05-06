@@ -3,7 +3,7 @@ const menu = [
   ['Blog', '/blog'],
   ['Projects', '/projects'],
   ['Resume', '/resume'],
-  ['Contact', '/contact'],
+  ['Channel', '/channel'],
 ];
 
 module.exports = menu;

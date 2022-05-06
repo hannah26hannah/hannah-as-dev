@@ -16,7 +16,7 @@ export default function Home() {
         <article>
           <p className='font-normal text-2xl'>
             Hi, <br />
-            I'm a <Highlighter text='Seoul based' path='contact' />
+            I'm a <Highlighter text='Seoul based' path='channel' />
             <br />
             <Highlighter text='Front-end Developer' path='projects' />
             <br />
