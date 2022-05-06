@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import metadata from 'data/metadata';
 import Image from 'next/image';
-import CoffeeChat from '../public/images/coffee-chat.gif';
+// import CoffeeChat from '../public/images/coffee-chat.gif';
 
 export default function Contact() {
   return (
@@ -27,7 +27,7 @@ export default function Contact() {
 
       <hr className='my-4 mx-auto w-1/2' />
 
-      <section className='you-can-book-me mt-5'>
+      {/* <section className='you-can-book-me mt-5'>
         <h2 className='text-center'>
           Let's have coffee and a great chat with me!
           <br />
@@ -43,7 +43,7 @@ export default function Contact() {
         <div className='flex justify-center mt-5'>
           <Image src={CoffeeChat} alt={'coffee'} />
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }
