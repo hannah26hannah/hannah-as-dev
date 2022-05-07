@@ -7,10 +7,11 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
+
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Coda', 'cursive', ...defaultTheme.fontFamily.sans],
+        sans: ['Hahmlet', 'serif', ...defaultTheme.fontFamily.serif],
       },
     },
     screens: {
