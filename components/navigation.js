@@ -40,7 +40,7 @@ export default function Navigation() {
 
   return (
     <nav className='w-full flex flex-col text-gray-1 text-xl py-6 items-start tablet:items-center h-auto'>
-      <h1 className='text-3xl mb-6'>
+      <h1 className='text-3xl mb-6 font-bold'>
         <Link href='/'>
           <a>Hannah-as-{getLabel()}</a>
         </Link>
@@ -63,7 +63,7 @@ export default function Navigation() {
                 <a
                   className={`${
                     isActive(url) ? 'floating-dot' : ''
-                  } cursor-pointer rounded-lg px-3 py-2 font-medium text-gray-1 hover:underline`}
+                  } font-bold cursor-pointer rounded-lg px-3 py-2 text-gray-1 hover:underline`}
                 >
                   {title}
                 </a>

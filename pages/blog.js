@@ -20,7 +20,7 @@ export async function getStaticProps() {
 
 function PostList(post) {
   return (
-    <li className='w-full text-center text-xl text-gray-1 py-2 border-b-2 border-gray-5 first:border-t-2'>
+    <li className='w-full text-start text-xl text-gray-1 py-2 border-b-2 border-gray-5 first:border-t-2'>
       <Link href={post.url}>
         <a>
           <span className='mr-2'>{post.title}</span>

@@ -34,7 +34,7 @@ function PostLayout({ post }) {
         href={href}
         onClick={onClick}
         ref={ref}
-        className='absolute left-0 ml-2 hover:cursor-pointer'
+        className='absolute left-0 ml-2 hover:cursor-pointer mr-2'
       >
         <FontAwesomeIcon icon={faChevronLeft} />
       </a>
@@ -45,9 +45,10 @@ function PostLayout({ post }) {
     <Layout>
       <Head>
         <title>{post.title} | hannah as dev</title>
+        {/* TODO: add descrpition meta tag for SEO */}
       </Head>
       <article className='flex flex-col justify-center items-center w-full'>
-        <h2 className='bg-beige-default w-full flex justify-center items-center text-center text-2xl text-gray-1 py-3 border-t-2 border-b-2 border-gray-1 relative tracking-wider'>
+        <h2 className='bg-beige-default w-full flex justify-center items-center text-center text-xl tablet:text-2xl text-gray-1 py-3 border-t-2 border-b-2 border-gray-1 relative tracking-wider'>
           <Link href='/blog'>
             <CustomIcon />
           </Link>
@@ -69,8 +70,8 @@ function PostLayout({ post }) {
 
         <div
           dangerouslySetInnerHTML={{ __html: post.body.html }}
-          className='py-3 flex flex-col gap-8'
-          align='center'
+          className='py-3 flex flex-col gap-8 w-full'
+          align='start'
         />
       </article>
 

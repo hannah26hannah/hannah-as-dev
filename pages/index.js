@@ -31,7 +31,7 @@ export default function Home() {
           </p>
         </article>
         <aside className='flex absolute right-5 bottom-10 tablet:items-end'>
-          <h1 className='font-light text-3xl'>Hannah as Dev</h1>
+          <h1 className='font-bold text-3xl'>Hannah as Dev</h1>
         </aside>
       </section>
     </IndexLayout>
