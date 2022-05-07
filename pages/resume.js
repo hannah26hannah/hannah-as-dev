@@ -21,16 +21,6 @@ export default function Resume() {
   const { profile, coreCompetency, careerSummary, education, certificate } =
     career;
 
-  // useEffect(() => {
-  //   const getResumeData = async () => {
-  //     const res = await fetch('/api/notionAPI');
-  //     const resJson = await res.json();
-  //     setData(resJson);
-  //   };
-
-  //   getResumeData().catch((err) => console.log('err', err));
-  // }, []);
-
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center gap-3'>
