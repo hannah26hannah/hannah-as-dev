@@ -44,7 +44,7 @@ const career = {
   careerSummary: [
     {
       company: '나무 AI',
-      title: 'Lead Front End Software Engineer',
+      title: 'Lead Front-End Engineer',
       description: 'Company Homepage 리뉴얼, Pomelo CRM/Pomelo Pop 서비스 개발',
       usedSkills: 'React, React Native, Next, Rematch',
       period: '2021. 10 ~ 현재',
@@ -73,7 +73,7 @@ const career = {
     },
     {
       company: '대한항공',
-      title: 'Junior Front End Software Engineer',
+      title: 'Junior Front-End Engineer',
       description: 'E-document Service Platform 개발',
       usedSkills: 'React, Material UI, Redux',
       period: '2021.03 ~ 2021.09. 16',
@@ -103,7 +103,7 @@ const career = {
     },
     {
       company: '한화생명',
-      title: 'Junior Front End Software Engineer',
+      title: 'Junior Front-End Engineer',
       description: 'Coupon Mall Hybrid App/Admin Dashboard 개발',
       usedSkills: 'Vue, vuex, Element UI',
       period: '2020.11 ~ 2020.12',
@@ -129,7 +129,7 @@ const career = {
     },
     {
       company: 'KoopKorea',
-      title: 'Front End Software Engineer',
+      title: 'Front-End Engineer',
       description: 'Storefront Redesign (BigCommerce)',
       usedSkills: 'Stencil, jQuery, handlebar.js',
       period: '2020.02 ~ 2020.04',

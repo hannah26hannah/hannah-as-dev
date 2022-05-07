@@ -25,12 +25,15 @@ module.exports = {
       beige: {
         default: '#f5f5dc',
       },
-
+      purple: {
+        default: '#8080D7',
+      },
       gray: {
+        default: '#787878',
         1: '#333333',
         5: '#E0E0E0',
         light: '#C4C4C4',
-        default: '#787878',
+        dark: '#22221F',
       },
     },
   },

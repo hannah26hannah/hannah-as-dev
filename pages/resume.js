@@ -6,11 +6,14 @@ import career from 'data/career';
 import React, { useEffect, useState } from 'react';
 import { format, parseISO } from 'date-fns';
 import { formatDate } from '../utils';
+import Tags from '../components/Tag';
 
 const ResumeItem = ({ title, children }) => {
   return (
     <article className='w-full'>
-      <h3 className='border-y-2 border-gray-5 mb-2 text-lg'>{title}</h3>
+      <h3 className='border-y-2 border-gray-5 mb-2 text-lg font-bold bg-beige-default pl-2'>
+        {title}
+      </h3>
       <ul className='flex flex-col gap-2'>{children}</ul>
     </article>
   );
@@ -27,15 +30,27 @@ export default function Resume() {
         <ResumeItem title={'🙇🏻‍♀️ About'}>
           <li>{profile.hello}</li>
           <li>{profile.about}</li>
-          <l>Career : {profile.job}</l>
-          <l>Location : {profile.location}</l>
+          <li className='mt-5 font-bold'>
+            Career : <span className='text-purple-default'>{profile.job}</span>
+          </li>
+          <li>
+            <span className='font-bold'>Location : </span>
+            {profile.location}
+          </li>
         </ResumeItem>
 
         <ResumeItem title={'🧠 Core Competency'}>
           {coreCompetency.map(({ title, items }) => (
             <li key={title}>
-              <h4>{title}</h4>
-              <p>{items}</p>
+              <h4 className='font-bold my-2 text-purple-default'>{title}</h4>
+
+              <ul className='list-disc pl-5'>
+                {items.map((item, index) => (
+                  <li key={index} className=''>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ResumeItem>
@@ -44,10 +59,16 @@ export default function Resume() {
           {careerSummary.map(
             ({ company, title, description, usedSkills, period }) => (
               <li key={company}>
-                <h4>{`${company} (${period})`}</h4>
-                <h5>{title}</h5>
+                <h4 className='font-bold my-2 flex flex-row justify-between'>
+                  <span className='text-purple-default'>{`${company} (${period})`}</span>
+                  <span className='text-gray-default text-sm'>{title}</span>
+                </h4>
+
                 <h6>{description}</h6>
-                <p>Used Skills: {usedSkills}</p>
+                <p className='mt-2'>
+                  <span className='font-bold text-sm'>Used Skills : </span>
+                  {usedSkills}
+                </p>
               </li>
             )
           )}
