@@ -45,6 +45,11 @@ pre {
   text-align: left;
 }
 
+/** code */
+code {
+  white-space: break-spaces;
+}
+
 /* pre > code {
   font-family: 'Inconsolata', monospace !important;
   line-height: 1.5;

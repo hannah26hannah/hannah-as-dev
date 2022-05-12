@@ -9,6 +9,7 @@ const Highlighter = ({ text, path }) => {
     </Link>
   );
 };
+
 export default function Home() {
   return (
     <IndexLayout>
@@ -16,18 +17,18 @@ export default function Home() {
         <article>
           <p className='font-normal text-2xl'>
             Hi, <br />
-            I'm a <Highlighter text='Seoul based' path='channel' />
+            I'm a <Highlighter text='Seoul based' path='/channel' />
             <br />
-            <Highlighter text='Front-end Developer' path='projects' />
+            <Highlighter text='Front-end Developer' path='/projects' />
             <br />
             who likes to{' '}
-            <Highlighter text='learn + write about new things' path='blog' />
+            <Highlighter text='learn + write about new things' path='/blog' />
             <br />
             I ... <br />
             run a{' '}
-            <Highlighter text='queer-tech community, :q' path='projects' />
+            <Highlighter text='queer-tech community, :q' path='/projects' />
             <br />
-            love to <Highlighter text='dive into further' path='projects' />
+            love to <Highlighter text='dive into further' path='/projects' />
           </p>
         </article>
         <aside className='flex absolute right-5 bottom-10 tablet:items-end'>
