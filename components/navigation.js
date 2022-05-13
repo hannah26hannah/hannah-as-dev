@@ -24,6 +24,8 @@ export default function Navigation() {
   const isActive = (url) => {
     if (url === '/blog' && pathname.includes('posts')) {
       return true;
+    } else if (url === '/projects' && pathname.includes('projects')) {
+      return true;
     }
     return pathname === url;
   };
