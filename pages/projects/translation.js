@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 
-export default function Community() {
+export default function Translation() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>
-        Community
+        Translation
       </section>
     </Layout>
   );

@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 
-export default function Translation() {
+export default function Research() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>
-        Translation
+        Research
       </section>
     </Layout>
   );

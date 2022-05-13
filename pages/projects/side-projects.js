@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 
-export default function Research() {
+export default function SideProjects() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>
-        Research
+        side-project
       </section>
     </Layout>
   );
