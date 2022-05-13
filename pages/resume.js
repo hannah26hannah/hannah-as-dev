@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import Head from 'next/head';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import career from 'data/career';
 import React, { useEffect, useState } from 'react';
 import { format, parseISO } from 'date-fns';
