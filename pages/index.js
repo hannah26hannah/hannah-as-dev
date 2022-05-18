@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import { IndexLayout } from '../components/layout';
+import { IndexLayout } from '../components/Layout';
 
 const Highlighter = ({ text, path }) => {
   return (

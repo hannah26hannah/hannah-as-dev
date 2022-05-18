@@ -19,6 +19,11 @@ export const Post = defineDocumentType(() => ({
       description: 'The subtitle of the post',
       required: false,
     },
+    series: {
+      type: 'string',
+      description: 'The title of a series',
+      require: false,
+    },
     tags: {
       type: 'list',
       of: {

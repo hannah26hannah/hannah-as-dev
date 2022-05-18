@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { forwardRef } from 'react';

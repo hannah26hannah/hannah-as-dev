@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import metadata from 'data/metadata';
 import Image from 'next/image';
 // import CoffeeChat from '../public/images/coffee-chat.gif';
