@@ -10,7 +10,10 @@ const career = {
   coreCompetency: [
     {
       title: 'Mobile App',
-      items: ['React Native, Expo를 사용한 하이브리드 모바일 앱 개발'],
+      items: [
+        'React Native, Expo, Capacitor를 사용한 Cross-platform & Hybrid 모바일 앱 개발',
+        'XCode 사용',
+      ],
     },
     {
       title: 'Modern Web',
@@ -46,7 +49,7 @@ const career = {
       company: '나무 AI',
       title: 'Lead Front-End Engineer',
       description: 'Company Homepage 리뉴얼, Pomelo CRM/Pomelo Pop 서비스 개발',
-      usedSkills: 'React, React Native, Next, Rematch',
+      usedSkills: 'Next, Capacitor',
       period: '2021. 10 ~ 현재',
       detail: [
         {
@@ -55,18 +58,12 @@ const career = {
           desc: ['Gatsby 기반의 홈페이지 리뉴얼', 'i18next 다국어 관리'],
         },
         {
-          project: 'Pomelo Pop',
-          link: '',
-          desc: [
-            '고객-중소기업 간 관계를 Play-to-Earn 방식으로 제안하는 모바일 하이브리드 웹앱으로, 고객용 웹에 참여함',
-          ],
-        },
-        {
           project: 'Pomelo CRM',
           link: '',
           desc: [
             'AI 기반의 CRM 솔루션을 제공한다.',
             'App-Web hybrid platform을 통해 중소~대기업 비즈니스 고객을 위한 대시보드, 가상 상점 빌더 등 CRM 기능을 제공',
+            'Coupon 발급 등 CRM 비즈니스 유저와 일반 유저를 잇기 위한 유저용 플랫폼 개발',
           ],
         },
       ],
