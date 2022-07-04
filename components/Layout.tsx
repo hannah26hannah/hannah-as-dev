@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import Navigation from './Navigation';
 import Footer from './Footer';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
 import { capitalize } from '../utils';
 
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   const router = useRouter();
 
   const title = router.pathname.substring(1);
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   );
 };
 
-export const IndexLayout = ({ children }) => {
+export const IndexLayout: React.FC = ({ children }) => {
   return (
     <div className='flex min-h-screen flex-col items-center justify-center pb-10 px-5 tablet:py-[100px] tablet:px-[80px] desktop:py-[200px]'>
       <Head>

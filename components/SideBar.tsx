@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 
-export default function SideBar({ closeMobileMenu, isActive }) {
+const SideBar: React.FC<any> = ({ closeMobileMenu, isActive }) => {
   return (
     <aside
       className='w-64 h-screen fixed top-0 left-0 z-10'
@@ -14,7 +14,7 @@ export default function SideBar({ closeMobileMenu, isActive }) {
         <div className='flex justify-end'>
           <button type='button' onClick={closeMobileMenu}>
             <span className='sr-only'>Close Mobile Menu</span>
-            <FontAwesomeIcon icon={faArrowLeftLong} size='xl' />
+            <FontAwesomeIcon icon={faArrowLeftLong} size='lg' />
           </button>
         </div>
 
@@ -36,4 +36,5 @@ export default function SideBar({ closeMobileMenu, isActive }) {
       </div>
     </aside>
   );
-}
+};
+export default SideBar;

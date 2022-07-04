@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from './SideBar';
 import menu from 'data/menu';
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   const router = useRouter();
   const pathname = router.pathname;
 
