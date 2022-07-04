@@ -1,3 +1,6 @@
 const { withContentlayer } = require('next-contentlayer');
 
-module.exports = withContentlayer()({});
+const defaultConig = {
+  basePath: '',
+};
+module.exports = withContentlayer()(defaultConig);

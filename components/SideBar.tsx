@@ -3,6 +3,7 @@ import menu from 'data/menu';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const SideBar: React.FC<any> = ({ closeMobileMenu, isActive }) => {
   return (
@@ -14,7 +15,7 @@ const SideBar: React.FC<any> = ({ closeMobileMenu, isActive }) => {
         <div className='flex justify-end'>
           <button type='button' onClick={closeMobileMenu}>
             <span className='sr-only'>Close Mobile Menu</span>
-            <FontAwesomeIcon icon={faArrowLeftLong} size='lg' />
+            <FontAwesomeIcon icon={faArrowLeftLong as IconProp} size='lg' />
           </button>
         </div>
 

@@ -1,10 +1,12 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import Layout from '../../components/Layout';
-import ColonQ from '../../public/images/community-logo.jpeg';
+
+import Layout from 'components/Layout';
+import Card from 'components/Card';
+
+import ColonQ from 'images/community-logo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import Card from '../../components/Card';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export default function Community() {
   return (
@@ -22,7 +24,7 @@ export default function Community() {
               target='_blank'
             >
               <span className='mr-2'>Colon Q Twitter</span>
-              <FontAwesomeIcon icon={faTwitter} size='xl' />
+              <FontAwesomeIcon icon={faTwitter as IconProp} size='lg' />
             </a>
           </Link>
         </Card>

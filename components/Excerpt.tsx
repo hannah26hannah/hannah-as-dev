@@ -3,7 +3,7 @@
  * @param excerpt
  */
 
-const Excerpt = ({ excerpt }) => {
+const Excerpt: React.FC<any> = ({ excerpt }) => {
   return (
     <ul className='p-4'>
       {excerpt?.length > 0

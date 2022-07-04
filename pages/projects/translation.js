@@ -1,7 +1,7 @@
-import Card from '../../components/Card';
-import Layout from '../../components/Layout';
+import Card from 'components/Card';
+import Layout from 'components/Layout';
 
-import FreeCodeCamp from '../../public/images/translation-logo.png';
+import FreeCodeCamp from 'images/translation-logo.png';
 
 export default function Translation() {
   return (

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from './SideBar';
 import menu from 'data/menu';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const Navigation: React.FC = () => {
   const router = useRouter();
@@ -21,7 +22,7 @@ const Navigation: React.FC = () => {
     }
   };
 
-  const isActive = (url) => {
+  const isActive = (url: string) => {
     if (url === '/blog' && pathname.includes('posts')) {
       return true;
     } else if (url === '/projects' && pathname.includes('projects')) {
@@ -50,7 +51,7 @@ const Navigation: React.FC = () => {
 
       <button type='button' onClick={openMobileMenu} className='tablet:hidden'>
         <span className='sr-only'>Open Mobile Menu</span>
-        <FontAwesomeIcon icon={faBars} size='lg' />
+        <FontAwesomeIcon icon={faBars as IconProp} size='lg' />
       </button>
 
       {isOpen && (

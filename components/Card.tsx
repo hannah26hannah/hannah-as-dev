@@ -12,7 +12,7 @@ interface IPeriod {
 }
 
 interface IImage {
-  src: string;
+  src: StaticImageData;
   alt: string;
 }
 
