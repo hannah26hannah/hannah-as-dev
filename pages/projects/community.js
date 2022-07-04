@@ -4,20 +4,18 @@ import Layout from '../../components/Layout';
 import ColonQ from '../../public/images/community-logo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Card from '../../components/Card';
 
 export default function Community() {
   return (
     <Layout>
       <section className='flex flex-col justify-center items-center'>
-        <article className='border-[1px] border-gray-light rounded-lg p-3'>
-          <h2 className='font-bold'>Colon Q</h2>
-          <span className='block text-right text-gray-default'>2022 ~ </span>
-
-          <div className='w-[200px] my-4'>
-            <Image src={ColonQ} alt='colon q logo' className='rounded-lg' />
-          </div>
-
-          <p className='my-4'>모두를 위한 퀴어 테크 커뮤니티</p>
+        <Card
+          title='Colon Q'
+          period={{ start: '2022', end: 'present' }}
+          image={{ src: ColonQ, alt: 'colon q logo' }}
+          description='모두를 위한 퀴어 테크 커뮤니티'
+        >
           <Link href={'https://twitter.com/colonqqueertech?s=21'}>
             <a
               className='cursor-pointer hover:text-purple-default'
@@ -27,7 +25,7 @@ export default function Community() {
               <FontAwesomeIcon icon={faTwitter} size='xl' />
             </a>
           </Link>
-        </article>
+        </Card>
       </section>
     </Layout>
   );
