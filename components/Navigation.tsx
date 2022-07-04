@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from './SideBar';
 import menu from 'data/menu';
 
-export default function Navigation() {
+const Navigation = () => {
   const router = useRouter();
   const pathname = router.pathname;
 
@@ -50,7 +50,7 @@ export default function Navigation() {
 
       <button type='button' onClick={openMobileMenu} className='tablet:hidden'>
         <span className='sr-only'>Open Mobile Menu</span>
-        <FontAwesomeIcon icon={faBars} size='xl' />
+        <FontAwesomeIcon icon={faBars} size='lg' />
       </button>
 
       {isOpen && (
@@ -76,4 +76,6 @@ export default function Navigation() {
       </ul>
     </nav>
   );
-}
+};
+
+export default Navigation;
