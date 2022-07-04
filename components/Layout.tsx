@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { capitalize } from '../utils';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   const router = useRouter();
 
   const title = router.pathname.substring(1);
@@ -25,9 +25,9 @@ export default function Layout({ children }) {
       <Footer />
     </div>
   );
-}
+};
 
-export function IndexLayout({ children }) {
+export const IndexLayout = ({ children }) => {
   return (
     <div className='flex min-h-screen flex-col items-center justify-center pb-10 px-5 tablet:py-[100px] tablet:px-[80px] desktop:py-[200px]'>
       <Head>
@@ -39,4 +39,6 @@ export function IndexLayout({ children }) {
       </main>
     </div>
   );
-}
+};
+
+export default Layout;
